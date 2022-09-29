@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./images/favicon-32x32.png" />
-    <title>Document</title>
+    <title>Card Component</title>
   </head>
   <body>
-    <div class="box">
-      <span class="title"></span>
-      <p class="advice"></p>
-      <picture class="divider">
-        <source media="(min-width: 519px)" srcset="images/pattern-divider-desktop.svg">
-        <source media="(max-width: 520px)" srcset="images/pattern-divider-mobile.svg">
-        <img src="images/pattern-divider-mobile.svg" alt=""/>
-      </picture>
-      <div class="dice">
-        <img src="images/icon-dice.svg" alt=""/>
+    <main>
+      <div class="box">
+        <div class="img">
+          <img class="equi" src="./images/image-equilibrium.jpg" alt="equilibrium" />
+          <div class="overlay">
+            <img src="./images/icon-view.svg" alt="" />
+          </div>
+        </div>
+        <h1>Equlibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="info">
+          <span class="left"
+            ><img
+              class="image"
+              src="./images/icon-ethereum.svg"
+              alt=""
+            />0.041 ETH</span
+          >
+          <span class="right"
+            ><img
+            class="image"
+              src="./images/icon-clock.svg"
+              alt=""
+            />3 days left</span
+          >
+        </div>
+        <hr />
+        <div class="footer">
+          <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+          <span> Creation of&nbsp; <span class="name"> Jules Wyvern</span></span>
+        </div>
       </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
   </body>
 </html>
