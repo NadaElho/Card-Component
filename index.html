@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
     <title>Document</title>
   </head>
   <body>
-    <div class="dashboard">
-      <div class="one">
-        <div class="name">
-            <img src="./images/image-jeremy.png" alt=""/>
-            <div>
-                <span>Report for</span>
-                <h6>Jeremy Robson</h6>
-            </div>
-        </div>
-        <div class="time">
-            <span>Daily</span>
-            <span class="active">Weekly</span>
-            <span>Monthly</span>
-        </div>
-      </div>
+    <div class="box">
+      <span class="title"></span>
+      <p class="advice"></p>
+      <picture class="divider">
+        <source media="(min-width: 519px)" srcset="images/pattern-divider-desktop.svg">
+        <source media="(max-width: 520px)" srcset="images/pattern-divider-mobile.svg">
+        <img src="images/pattern-divider-mobile.svg" alt=""/>
+      </picture>
+      <div class="dice">
+        <img src="images/icon-dice.svg" alt=""/>
       </div>
     </div>
     <script src="script.js"></script>

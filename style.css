@@ -1,245 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #0d1a2d;
+  background-color: hsl(218, 23%, 16%);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.dashboard{
-    display: grid;
-    gap: 30px;
-}
-.dashboard .one{
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
-.dashboard .two{
-    grid-column: 2;
-    grid-row: 1;
-}
-.dashboard .three{
-    grid-column: 3;
-    grid-row: 1;
-}
-.dashboard .four{
-    grid-column: 4;
-    grid-row: 1;
-}
-.dashboard .five{
-    grid-column: 2;
-    grid-row: 2;
-}
-.dashboard .six{
-    grid-column: 3;
-    grid-row: 2;
-}
-.dashboard .seven{
-    grid-column: 4;
-    grid-row: 2;
-}
-@media (max-width:767px) {
-    .dashboard{
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-    }
-}
-@media (max-width:1290px) {
-    .dashboard{
-        padding: 20px;
-    }
-    .dashboard .one{
-        grid-column: 1;
-        grid-row: 1 / span 2;
-    }
-    .dashboard .two{
-        grid-column: 2;
-        grid-row: 1;
-    }
-    .dashboard .three{
-        grid-column: 2;
-        grid-row: 2;
-    }
-    .dashboard .four{
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .dashboard .five{
-        grid-column: 2;
-        grid-row: 3;
-    }
-    .dashboard .six{
-        grid-column: 1;
-        grid-row: 4;
-    }
-    .dashboard .seven{
-        grid-column: 2;
-        grid-row: 4;
-    }
-}
-.one{
-    width: 300px;
-}
-.one .name{
-    background-color: #5746ea;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
+.box{
     padding: 30px;
-    width: 300px;
-    z-index: 5;
+    width: 500px;
+    background-color:  hsl(217, 19%, 24%);
+    text-align: center;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
     position: relative;
 }
-.one .name img{
+.box span{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+}
+.box p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: hsl(193, 38%, 86%);
+    font-size: 20px;
+}
+picture img{
+    margin-bottom: 30px;
+}
+.dice{
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #FFF;
-    width: 80px;
-    margin-bottom: 50px;
-}
-.one .name span{
-    color: rgba(238, 238, 238, 0.829);
-    margin-bottom: 10px;
-}
-.one .name h6{
-    color: #FFF;
-    font-size: 60px;
-    font-weight: 100;
-}
-.name span{
-    display: block;
-}
-.one .time{
-    background-color: #1d204b;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    padding: 30px;
-    width: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: -20px;
-}
-.one .time span{
-    display: block;
-    color: #5f60a0;
-    cursor: pointer;
-    margin-top: 19px;
-}
-.one .time span.active{
-    color: #FFF;
-}
-@media (max-width:767px) {
-    .dashboard .one .name{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .dashboard .one h6{
-        font-size: 20px;
-    }
-    .dashboard .one img{
-        margin-bottom: 0;
-    }
-    .one .time{
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .one .time span:not(:first-child) {
-        margin-left: 19px;
-    }
-}
-.box{
-    color: #FFF;
-    width: 300px;
-}
-.box .name{
-    display: flex;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    width: 300px;
-    justify-content: end;
-    padding-right: 10px;
-    overflow: hidden;
-}
-.box .work{
-    background-color: #1d204b;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    margin-top: -20px;
-    z-index: 5px;
-    width: 300px;
-    position: relative; 
-    padding: 30px;
-}
-.box .work:hover{
-    background-color: #282b53;
-}
-.box .name img{
-    height: 76px;
-    margin-top: -10px;
-}
-.box .workTitle{
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-}
-.box .workTitle span{
-    font-size: 20px;
-}
-.box .workTitle img{
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
     cursor: pointer;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
-.box .work h6{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.dice:hover{
+    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
 }
-.box .work p{
-    font-size: 15px;
-    color: rgb(214, 212, 212);
-}
-@media (max-width:767px) {
-    .dashboard .hrs{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .dashboard .hrs h6{
-        font-size: 30px;
-    }
-    .box .work h6 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+@media (max-width: 520px) {
+    .box{
+        width: 350px;
+        padding: 15px;
     }
 }
